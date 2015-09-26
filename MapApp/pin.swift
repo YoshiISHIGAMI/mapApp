@@ -6,4 +6,16 @@
 //  Copyright © 2015年 Yoshi Ishigami. All rights reserved.
 //
 
-import Foundation
+import MapKit
+
+//アノテーションクラス
+class Pin :NSObject, MKAnnotation{
+    
+    var coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D()
+    var title:String?
+    
+    init(geo:CLLocationCoordinate2D){
+        coordinate = geo
+    }
+    
+}
